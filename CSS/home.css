@@ -1,0 +1,178 @@
+/* body {
+  font-family: 'Inter', sans-serif;
+} */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling for the header */
+
+.navbar {
+  font-family: 'Inter', sans-serif;
+  background-color: lightgray;
+  border-radius: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 25px;
+  left: 0px;
+  margin-top: 30px;
+}
+
+.navbar-left img {
+  width: 80px;
+  height: 80px;
+  left: 40px;
+  top: 15px;
+  padding-left: 20px;
+}
+
+.navbar li {
+  font-weight: 500;
+  text-decoration: none;
+  padding: 1px 1px;
+  list-style: none;
+  margin: 5px 9px;
+  float: left;
+}
+
+/* .navbar ul {} */
+
+.navbar li a {
+  text-decoration: none;
+  padding: 1px 1px;
+  color: black;
+}
+
+.navbar-right {
+  display: flex;
+  font-weight: 500;
+}
+
+.navbar-right a {
+  display: flex;
+  font-weight: 500;
+  padding: 1px 1px;
+  margin: 5px 9px;
+}
+
+i {
+  width: 50px;
+  display: flex;
+  align-self: center;
+  color: black;
+}
+
+/*The end of the styling for the header with Navbar. */
+
+/* Stlying for search bar */
+
+.searchbar {
+  font-family: 'Inter', sans-serif;
+  top: 20px;
+  position: relative;
+  /* will need to try position absolute*/
+  display: flex;
+  justify-content: flex-end;
+  font-size: small;
+  right: 60px;
+  gap: 10px;
+}
+
+.searchbar li {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  font-size: medium;
+  font-weight: 700;
+}
+
+/* May not need this one 
+input {
+    width: 35%;
+}
+*/
+
+input[type=text] {
+    width: 90%;
+    box-sizing: border-box;
+    background-color: lightgray;
+}
+
+select {
+    width: 80%;
+    box-sizing: border-box;
+    background-color: lightgray;
+}
+
+/* The end of styling for the Searchbar. */
+
+/* Rules to make images easier to work with */
+
+img {
+  max-width: 100%;
+  display: block;
+} 
+
+/* styling for the Large Container */
+
+.large-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* This marks the styling for the Sidebar. */
+
+.sidebar {
+  width: 15%;
+  font-family: 'Mate', serif;  
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  position: absolute;
+  padding: 20px;
+  line-height: 25px;
+}
+
+.sidebar .sidebar_menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .sidebar_menu li {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+
+.sidebar .sidebar_menu li a {
+  text-decoration: none;
+  /* row-gap: 50px; */
+  color: black;
+}
+
+/* End of Sidebar menu end styling. */
+
+/* Start of Everything Container */
+.everything-container {
+  width: 76%;
+  padding: 20px;
+}
+
+/* Styling of Left Intro */
+
+.left-intro {
+  display: flex;
+}
+
+.title {
+  font-family: 'Mate', serif;  
+  font-weight: 400;
+  font-size: 15px;
+}
+
+/* End of Everything Container */

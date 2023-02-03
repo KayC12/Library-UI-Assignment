@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/catalog.css" />
+    <script
+      src="https://kit.fontawesome.com/cd6d3d3a51.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Imbue:opsz@10..100&family=Inter:wght@300&family=Mate&display=swap"
+      rel="stylesheet"
+    />
+    <title>UI Library Website</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-left">
+          <img src="../Assets/Ellipse 1.png" alt="Logo for Peadmont Library" />
+        </div>
+        <div class="navbar-right">
+          <li><a href="location.html">Location</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="about.html">About US</a></li>
+          <li><a href="signin.html">Sign-in</a></li>
+          <a href="#"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>
+        </div>
+      </nav>
+    </header>
+    <div class="searchbar">
+      <li>Search Catalog</li>
+      <div>
+        <label for="title"></label>
+        <input type="text" placeholder="Title" id="title" />
+      </div>
+      <div>
+        <label for="isbn"></label>
+        <input type="text" placeholder="ISBN" id="isbn" />
+      </div>
+      <div>
+        <label for="format"></label>
+        <select name="format" id="format">
+          <option value="Format">Format</option>
+          <option value="Paperback">Paperback</option>
+          <option value="PDF">PDF</option>
+          <option value="Audiobook">Audiobook</option>
+        </select>
+      </div>
+      <div>
+        <label for="genre"></label>
+        <select name="genre" id="genre">
+          <option value="Genre">Genre</option>
+          <option value="Romance">Romance</option>
+          <option value="Autobiography">Autobiography</option>
+          <option value="Fiction">Fiction</option>
+          <option value="Non-fiction">Non-fiction</option>
+          <option value="Mystery">Mystery</option>
+        </select>
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="sidebar_menu">
+        <ul>
+          <li><a href="#">Ask us</a></li>
+          <li><a href="checkedhistory.html">Reading Challenge</a></li>
+          <li><a href="catalog.html">Catalog</a></li>
+          <li><a href="#">Bookcamp</a></li>
+          <li><a href="#">E-book</a></li>
+          <li><a href="#">STEM</a></li>
+          <li><a href="#">Online Resources</a></li>
+          <li><a href="#">Volunteer</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="book-container">
+      <h4>
+        There are 6 readers in line for this title, check out these similar
+        titles that are currently available.
+      </h4>
+      <div class="book-grid">
+        <div class="book stacked">
+          <img
+            src="../Assets/catalog images/The Vanishing Half book.jpg"
+            alt="The Vanishing half book by Brit Bennet"
+            class="book_img"
+          />
+          <div class="book_content">
+            <div>
+              <input
+                type="submit"
+                value="Check Out"
+                name="submit"
+                id="submit"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="book stacked">
+          <img
+            src="../Assets/catalog images/Detransition Baby book.jpg"
+            alt="Detransition, Baby book by Torrey Peters"
+            class="book_img"
+          />
+          <div class="book_content">
+            <div>
+              <input
+                type="submit"
+                value="Check Out"
+                name="submit"
+                id="submit"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="book stacked">
+          <img
+            src="../Assets/catalog images/Somebodys Daughter A Memoir book.jpg"
+            alt="Somebody's Daughter A Memoir book by Ashley C. Ford"
+            class="book_img"
+          />
+          <div class="book_content">
+            <div>
+              <input
+                type="submit"
+                value="Check Out"
+                name="submit"
+                id="submit"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="book stacked">
+          <img
+            src="../Assets/catalog images/You Exist Too Much book.jpg"
+            alt="Book titled You Exist Too Much by Zaina Arafa"
+            class="book_img"
+          />
+          <div class="book_content">
+            <div>
+              <input
+                type="submit"
+                value="Check Out"
+                name="submit"
+                id="submit"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="book-grid">
+        <div class="book stacked">
+          <img
+            src="../Assets/catalog images/A Map is Only One Story book.jpg"
+            alt="A Map is Only One Story by Twenty Writers on Immigration, Family and the Meaning of Home"
+            class="book_img"
+          />
+          <div class="book_content">
+            <div>
+              <input
+                type="submit"
+                value="Check Out"
+                name="submit"
+                id="submit"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="book stacked">
+          <img
+            src="../Assets/catalog images/Bangkok Wakes to Rain book.jpg"
+            alt="Bangkok Wakes to Rain book by Patchaya Sudbanthad"
+            class="book_img"
+          />
+          <div class="book_content">
+            <div>
+              <input
+                type="submit"
+                value="Check Out"
+                name="submit"
+                id="submit"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="book stacked">
+          <img
+            src="../Assets/catalog images/Trust Exercise book.jpg"
+            alt="Trust Exercise book by Susan Choi"
+            class="book_img"
+          />
+          <div class="book_content">
+            <div>
+              <input
+                type="submit"
+                value="Check Out"
+                name="submit"
+                id="submit"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="book stacked">
+          <img
+            src="../Assets/catalog images/Such a Fun Age book.jpg"
+            alt="Book titled Such a Fun Age by Kiley Reid"
+            class="book_img"
+          />
+          <div class="book_content">
+            <div>
+              <input
+                type="submit"
+                value="Check Out"
+                name="submit"
+                id="submit"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="loner-book">
+      <div class="loner">
+        <img src="../Assets/catalog images/Friends & Strangers book.jpg" alt="Book titled Friends & Strangers by J. Courtney Sullivan" class="loner_img" />
+      </div>
+      <div class="loner_content">
+        <input
+        type="message"
+        value="Not Available"
+        name="message"
+        id="submit"
+       />
+        <input
+          type="submit"
+          value="Place Hold"
+          name="submit"
+          id="submit"
+         />
+      </div>
+    </div>
+  </body>
+</html>

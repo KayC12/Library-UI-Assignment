@@ -1,0 +1,345 @@
+/* body {
+  font-family: 'Inter', sans-serif;
+} */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling for the header */
+
+.navbar {
+  font-family: 'Inter', sans-serif;
+  background-color: lightgray;
+  border-radius: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 25px;
+  left: 0px;
+  margin-top: 30px;
+}
+
+.navbar-left img {
+  width: 80px;
+  height: 80px;
+  left: 40px;
+  top: 15px;
+  padding-left: 20px;
+}
+
+.navbar li {
+  font-weight: 500;
+  text-decoration: none;
+  padding: 1px 1px;
+  list-style: none;
+  margin: 5px 9px;
+  float: left;
+}
+
+/* .navbar ul {} */
+
+.navbar li a {
+  text-decoration: none;
+  padding: 1px 1px;
+  color: black;
+}
+
+.navbar-right {
+  display: flex;
+  font-weight: 500;
+}
+
+.navbar-right a {
+  display: flex;
+  font-weight: 500;
+  padding: 1px 1px;
+  margin: 5px 9px;
+}
+
+i {
+  width: 50px;
+  display: flex;
+  align-self: center;
+  color: black;
+}
+
+/*The end of the styling for the header with Navbar. */
+
+/* Stlying for search bar */
+
+.searchbar {
+  font-family: 'Inter', sans-serif;
+  top: 20px;
+  position: relative;
+  /* will need to try position absolute*/
+  display: flex;
+  justify-content: flex-end;
+  font-size: small;
+  right: 60px;
+  gap: 10px;
+}
+
+.searchbar li {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  font-size: medium;
+  font-weight: 700;
+}
+
+/* May not need this one 
+input {
+    width: 35%;
+}
+*/
+
+input[type=text] {
+    width: 90%;
+    box-sizing: border-box;
+    background-color: lightgray;
+}
+
+select {
+    width: 80%;
+    box-sizing: border-box;
+    background-color: lightgray;
+}
+
+/* The end of styling for the Searchbar. */
+
+/* Start of Styling for the Main Container */
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* This marks the styling for the Sidebar. */
+
+.sidebar {
+    width: 13%;
+    font-family: 'Mate', serif;  
+    /* font-weight: 400; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: left; */
+    /* position: absolute; */
+    padding: 10px;
+    /* line-height: 25px; */
+}
+
+/* .sidebar .sidebar_menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+*/
+
+.sidebar .sidebar_menu li {
+  list-style: none;
+}
+
+.sidebar .sidebar_menu li a {
+  text-decoration: none;
+  /* row-gap: 50px; */
+  color: black;
+}
+
+/* End of Sidebar menu end styling. */
+
+/* Start of styling for Middle Section */
+
+.middle-section {
+  width: 50%;
+  padding: 20px;
+}
+
+.checkout {
+  /* display: flex;
+  padding-left: 280px;
+  padding-top: 10px; */
+  text-align: center;
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+}
+
+
+/* Rules to make images easier to work with */
+
+img {
+  max-width: 100%;
+  display: block;
+} 
+
+/* Styling for the Profile Container */
+
+/* DO NOT FORGET TO STYLE THE CHECK OUT HISTORY H2 */
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 520px;
+  height: 250px;
+  margin-top: 7px;
+  padding-left: 200px; */
+  /* border: 2px solid yellow; */
+}
+
+.profile-container h2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  padding-left: 70px;
+}
+
+/* .profile-grid {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Mate', serif;  
+  font-weight: 400;
+} */
+
+.profile-img {
+  text-align: center;
+  height: 220px;
+  width: 220px;
+}
+
+.profile_img
+
+.profile a {
+  color: #2477D9; 
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: xx-small;
+}
+
+.profile-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  /* flex-direction: column;
+  padding-left: 250px;
+  margin-top: -210px;
+  gap: 19px; */
+}
+
+.profile-item p {
+  padding: 0px 10px;
+}
+
+/* .profile_content2 {
+  display: flex;
+  flex-direction: column;
+  padding-left: 350px;
+  margin-top: -135px;
+  gap: 5px;
+} */
+
+/* .minor_genres {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: xx-small;
+  display: flex;
+  margin-left: 350px;
+  margin-top: 10px;
+}
+
+.minor_genres a {
+  text-decoration: none;
+  color: #2477D9; 
+  text-decoration-line: underline;
+}
+*/
+
+/* Come back to Profile container */
+
+/* Styling for the Favourites Container. */
+
+.favourites-container {
+  display: flex;
+  /*justify-content: flex-end; */
+  flex-direction: column;
+  /* width: 100%; */
+  /*height: 650px; */
+  /* margin-top: 20px; */
+}
+
+.favourites-container h2 {
+  display: flex;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  /*padding-left: 850px; */
+  margin-top: 7px;
+}
+
+.favourites-grid {
+  display: grid;
+  /* grid-auto-flow: column; */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  /* Don't forget to add the repeat 4, 20%*/
+  /* grid-template-rows: auto; */
+  /*padding-left: 900px;
+  margin-top: -200px; */
+  /* Add PADDING AND MARGIN  */
+}
+
+.favourites {
+  /* aspect-ratio: 4.5 / 7; */
+  /* border: 15px solid brown; */
+}
+
+.favourites_img {
+  width: 230px;
+  height: 400px;
+  /* aspect-ratio: 4.5 / 7; */
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: green;
+  color: white;
+  text-decoration: none;
+  width: 85px;
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+/* Styling for Recent returns */
+
+.returns-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 40px;
+  /* padding-left: 180px; */
+}
+
+.returns-container h2 {
+  font-family: 'Mate', serif;  
+}
+
+.returns-grid {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(5, 1fr);
+  /* ADD Repeat 5, 20%  */
+  grid-template-rows: auto;
+  /* ADD MARGIN AND PADDING  */
+}
+
+.returns {
+  border: 15px solid green;
+  /* Do Border for Right, top and bottom. NO LEFT */
+}
+
+.returns_img {
+  width: 100%;
+  aspect-ratio: 5 / 7;
+  object-fit: cover;
+}
