@@ -160,7 +160,7 @@ img {
 /* Start of Everything Container */
 .everything-container {
   width: 76%;
-  padding: 20px;
+  padding: 30px;
 }
 
 /* Styling of Left Intro */
@@ -173,6 +173,18 @@ img {
   font-family: 'Mate', serif;  
   font-weight: 400;
   font-size: 15px;
+}
+
+/* styling for Left Program */
+
+.left-program {
+  display: flex;
+  border: 2px solid yelloW;
+}
+
+.box-left {
+  width: 600px;
+  height: 400px;
 }
 
 /* End of Everything Container */
