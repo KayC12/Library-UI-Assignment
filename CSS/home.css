@@ -159,8 +159,8 @@ img {
 
 /* Start of Everything Container */
 .everything-container {
-  display: grid;
-  width: 76%;
+  /* display: grid; */
+  /* width: 76%; */
   padding: 30px;
 }
 
@@ -184,8 +184,17 @@ img {
 }
 
 .box-left {
-  width: 600px;
-  height: 400px;
+  width: 200px;
+  height: 350px;
+  background-image: image(Socials.jpg);
+  background-size: cover;
 }
+
+.right-students {
+  display: flex;
+  border: 2px solid yellow;
+}
+
+.box-right-top
 
 /* End of Everything Container */
