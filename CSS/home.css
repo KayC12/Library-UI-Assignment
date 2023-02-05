@@ -159,6 +159,7 @@ img {
 
 /* Start of Everything Container */
 .everything-container {
+  display: grid;
   width: 76%;
   padding: 30px;
 }
