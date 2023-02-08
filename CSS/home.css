@@ -158,25 +158,31 @@ img {
 /* End of Sidebar menu end styling. */
 
 /* Start of Everything Container */
+
 .everything-container {
   /* display: grid; */
   /* width: 76%; */
   padding: 30px;
 }
 
-/* Styling of Left Intro */
-
 .left-intro {
   display: flex;
+  justify-content: center;
+  width: 490px;
+  height: 350px;
+  border: 2px solid brown;
 }
 
 .title {
+  display: flex;
   font-family: 'Mate', serif;  
   font-weight: 400;
   font-size: 15px;
 }
 
-/* styling for Left Program */
+.left-intro-content {
+  display: flex;
+}
 
 .left-program {
   display: flex;
@@ -184,7 +190,7 @@ img {
 }
 
 .box-left {
-  width: 200px;
+  width: 450px;
   height: 350px;
   background-image: image(Socials.jpg);
   background-size: cover;
@@ -193,8 +199,20 @@ img {
 .right-students {
   display: flex;
   border: 2px solid yellow;
+  width: 450px;
+  height: 350px;
 }
 
-.box-right-top
+.box-right-top {
+  background-image: image(Socials.jpg);
+  background-size: cover;
+}
+
+.right-kids {
+  display: flex;
+  border: 2px solid yellow;
+  width: 450px;
+  height: 350px;
+}
 
 /* End of Everything Container */
