@@ -1,6 +1,6 @@
-/* body {
-  font-family: 'Inter', sans-serif;
-} */
+body {
+  height: 100%;
+}
 
 * {
     padding: 0;
@@ -121,37 +121,20 @@ img {
 .large-container {
   display: flex;
   justify-content: space-between;
+  padding: 40px 60px 60px 35px;
 }
 
 /* This marks the styling for the Sidebar. */
 
-.sidebar {
-  width: 15%;
+.sidebar_menu {
   font-family: 'Mate', serif;  
   font-weight: 400;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  position: absolute;
-  padding: 20px;
-  line-height: 25px;
-}
-
-.sidebar .sidebar_menu {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-}
-
-.sidebar .sidebar_menu li {
-  text-decoration: none;
+  /* line-height: 25px; */
   list-style: none;
-  color: black;
 }
 
-.sidebar .sidebar_menu li a {
+.sidebar_menu li a {
   text-decoration: none;
-  /* row-gap: 50px; */
   color: black;
 }
 
@@ -160,24 +143,21 @@ img {
 /* Start of Everything Container */
 
 .everything-container {
-  /* display: grid; */
-  /* width: 76%; */
-  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 350px;
+  width: 86%;
+  gap: 20px;
 }
 
 .left-intro {
-  display: flex;
-  justify-content: center;
-  width: 490px;
-  height: 350px;
   border: 2px solid brown;
 }
 
 .title {
-  display: flex;
   font-family: 'Mate', serif;  
-  font-weight: 400;
-  font-size: 15px;
+  font-size: 35px;
+  padding-bottom: 5px;
 }
 
 .left-intro-content {
@@ -185,34 +165,26 @@ img {
 }
 
 .left-program {
-  display: flex;
-  border: 2px solid yelloW;
+  background-image: url("/Assets/Socials.jpg");
 }
 
-.box-left {
-  width: 450px;
+.container-item {
   height: 350px;
-  background-image: image(Socials.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+/* .container-item button  */
 
 .right-students {
-  display: flex;
-  border: 2px solid yellow;
-  width: 450px;
-  height: 350px;
-}
-
-.box-right-top {
-  background-image: image(Socials.jpg);
-  background-size: cover;
+  background-image: url("/Assets/StackedBooks.png");
 }
 
 .right-kids {
-  display: flex;
-  border: 2px solid yellow;
-  width: 450px;
-  height: 350px;
+  background-image: url("/Assets/KidsCircle.png");
 }
 
 /* End of Everything Container */
