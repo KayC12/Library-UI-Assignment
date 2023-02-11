@@ -15,127 +15,153 @@
       href="https://fonts.googleapis.com/css2?family=Imbue:opsz@10..100&family=Inter:wght@300&family=Mate&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mandali&family=Merriweather:wght@300&family=Tienne&display=swap"
+      rel="stylesheet"
+    />
     <title>Book Description Page</title>
   </head>
   <body>
     <header>
-        <nav class="navbar">
-          <div class="navbar-left">
-            <img src="../Assets/Ellipse 1.png" alt="Logo for Peadmont Library" />
+      <nav class="navbar">
+        <div class="navbar-left">
+          <img src="../Assets/Ellipse 1.png" alt="Logo for Peadmont Library" />
+        </div>
+        <div class="navbar-right">
+          <li><a href="location.html">Location</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="about.html">About US</a></li>
+          <li><a href="signin.html">Sign-in</a></li>
+          <a href="#"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>
+        </div>
+      </nav>
+    </header>
+    <div class="searchbar">
+      <li>Search Catalog</li>
+      <div>
+        <label for="title"></label>
+        <input type="text" placeholder="Title" id="title" />
+      </div>
+      <div>
+        <label for="isbn"></label>
+        <input type="text" placeholder="ISBN" id="isbn" />
+      </div>
+      <div>
+        <label for="format"></label>
+        <select name="format" id="format">
+          <option value="Format">Format</option>
+          <option value="Paperback">Paperback</option>
+          <option value="PDF">PDF</option>
+          <option value="Audiobook">Audiobook</option>
+        </select>
+      </div>
+      <div>
+        <label for="genre"></label>
+        <select name="genre" id="genre">
+          <option value="Genre">Genre</option>
+          <option value="Romance">Romance</option>
+          <option value="Autobiography">Autobiography</option>
+          <option value="Fiction">Fiction</option>
+          <option value="Non-fiction">Non-fiction</option>
+          <option value="Mystery">Mystery</option>
+        </select>
+      </div>
+    </div>
+    <!-- Gigantic Container starts here -->
+    <div class="gigantic-container">
+      <!-- sidebar starts here -->
+      <ul class="sidebar_menu">
+        <li><a href="#">Ask us</a></li>
+        <li><a href="checkedhistory.html">Reading Challenge</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a href="#">Bookcamp</a></li>
+        <li><a href="#">E-book</a></li>
+        <li><a href="#">STEM</a></li>
+        <li><a href="#">Online Resources</a></li>
+        <li><a href="#">Volunteer</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <!-- sidebar ends here -->
+      <!-- Major Container starts here -->
+      <div class="major-container">
+        <div class="single-book">
+          <img
+            src="../Assets/checked history images/This Close to Okay book.jpg"
+            alt=""
+            class="single-img"
+          />
+          <div class="rating">
+            <p>Rating</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
           </div>
-          <div class="navbar-right">
-            <li><a href="location.html">Location</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="about.html">About US</a></li>
-            <li><a href="signin.html">Sign-in</a></li>
-            <a href="#"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>
+          <input type="submit" value="Check Out" name="submit" id="submit" />
+        </div>
+        <div class="book-info">
+          <div class="primary-info">
+            <p>Title</p>
+            <div>
+              <p class="characterization">This Close to Okay</p>
+            </div>
           </div>
-        </nav>
-      </header>
-      <div class="searchbar">
-        <li>Search Catalog</li>
-        <div>
-          <label for="title"></label>
-          <input type="text" placeholder="Title" id="title" />
-        </div>
-        <div>
-          <label for="isbn"></label>
-          <input type="text" placeholder="ISBN" id="isbn" />
-        </div>
-        <div>
-          <label for="format"></label>
-          <select name="format" id="format">
-            <option value="Format">Format</option>
-            <option value="Paperback">Paperback</option>
-            <option value="PDF">PDF</option>
-            <option value="Audiobook">Audiobook</option>
-          </select>
-        </div>
-        <div>
-          <label for="genre"></label>
-          <select name="genre" id="genre">
-            <option value="Genre">Genre</option>
-            <option value="Romance">Romance</option>
-            <option value="Autobiography">Autobiography</option>
-            <option value="Fiction">Fiction</option>
-            <option value="Non-fiction">Non-fiction</option>
-            <option value="Mystery">Mystery</option>
-          </select>
+          <div class="primary-info">
+            <p>ISBN</p>
+            <div>
+              <p class="characterization">2654FGSDFOMGRFSFHT</p>
+            </div>
+          </div>
+          <div class="primary-info">
+            <p>Author</p>
+            <div>
+              <p class="characterization">Leesa Cross-Smith</p>
+            </div>
+          </div>
+          <div class="primary-info">
+            <p>Published</p>
+            <div>
+              <p class="characterization">October 15, 1995</p>
+            </div>
+          </div>
+          <br>
+          <div class="summary single-title">
+            <h3>Summary</h3>
+            <p class="singles-content">
+              Faucibus orci luctus et ultrices posuere cubilia curae; Aliquam
+              non molestie sapien. Sed et arcu in sapien ornare mattis. Lorem
+              ipsum dolor sit amet, consectetur adipisicing elit. Mauris finibus
+              ultricies nisl, id feugiat lorem vehicula ac. Suspendisse potenti.
+              Integer sollicitudin imperdiet congue. Sed feugiat turpis nec
+              felis Maecenas vitae lacinia orci. Etiam consequat
+            </p>
+            <p class="read-more"><a href="#">Read More</a></p>
+          </div>
+          <br>
+          <div class="reviews single-title">
+            <h3>Reviews</h3>
+            <h4 class="reviews-name"><a href="#">Stavie Mitchell -</a></h4>
+            <p class="singles-content">
+              et ultrices posuere cubilia curae; Aliquam non molestie sapien.
+              Sed et arcu in sapien orpis nec felis Maecenas vitae lacinia orci.
+              Etiam
+            </p>
+            <p class="read-more"><a href="#">Read More</a></p>
+            <h4 class="reviews-name"><a href="#">Larry Smith -</a></h4>
+            <p class="singles-content">
+              et ultrices posuere cubilia curae; Aliquam non molestie sapien.
+              Sed et arcu in sapien orpis nec felis Maecenas vitae lacinia orci.
+              Etiam
+            </p>
+            <p class="read-more"><a href="#">Read More</a></p>
+          </div>
         </div>
       </div>
-      <!-- Gigantic Container starts here -->
-      <div class="gigantic-container">
-        <!-- sidebar starts here -->
-        <ul class="sidebar_menu">
-          <li><a href="#">Ask us</a></li>
-          <li><a href="checkedhistory.html">Reading Challenge</a></li>
-          <li><a href="catalog.html">Catalog</a></li>
-          <li><a href="#">Bookcamp</a></li>
-          <li><a href="#">E-book</a></li>
-          <li><a href="#">STEM</a></li>
-          <li><a href="#">Online Resources</a></li>
-          <li><a href="#">Volunteer</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-        <!-- sidebar ends here -->
-
-        <!-- Major Container starts here -->
-        <div class="major-container">
-            <div class="single-book">
-                <img src="" alt="" class="single-img">
-                <div class="rating">
-                    <p>Rating</p>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <input
-                type="submit"
-                value="Check Out"
-                name="submit"
-                id="submit"
-              />
-            </div>
-
-            <div class="book-info">
-                <div class="primary-info">
-                    <h4>TITLE</h4>
-                    <div>
-                        <p>Description</p>
-                    </div>
-                </div>
-                <div class="primary-info">
-                    <h4>TITLE</h4>
-                    <div>
-                        <p>Description</p>
-                    </div>
-                </div>
-                <div class="primary-info">
-                    <h4>TITLE</h4>
-                    <div>
-                        <p>Description</p>
-                    </div>
-                </div>
-                <div class="primary-info">
-                    <h4>TITLE</h4>
-                    <div>
-                        <p>Description</p>
-                    </div>
-                </div>
-
-                <div class="summary single-title"></div>
-
-                <div class="reviews single-title"></div>
-
-            </div>
-
-        </div>
-
-
-        <!-- Major Container ends here -->
-
-        <!-- gigantic Container ends here -->
+    </div>
+    <!-- Major Container ends here -->
+    <!-- gigantic Container ends here -->
   </body>
 </html>

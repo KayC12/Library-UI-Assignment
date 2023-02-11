@@ -121,7 +121,7 @@ img {
 .large-container {
   display: flex;
   justify-content: space-between;
-  padding: 40px 60px 60px 35px;
+  padding: 40px 60px 60px 20px;
 }
 
 /* This marks the styling for the Sidebar. */
@@ -150,9 +150,9 @@ img {
   gap: 20px;
 }
 
-.left-intro {
+/* .left-intro {
   border: 2px solid brown;
-}
+} */
 
 .title {
   font-family: 'Mate', serif;  
@@ -166,6 +166,7 @@ img {
 
 .left-program {
   background-image: url("/Assets/Socials.jpg");
+  border-radius: 42px;
 }
 
 .container-item {
@@ -187,4 +188,18 @@ img {
   background-image: url("/Assets/KidsCircle.png");
 }
 
+.intro-button {
+  display: inline-block;
+  border: 1px solid rgba(12, 48, 64, 0.22);
+  border-radius: 10px;
+  background: #742C2C;
+  color: white;
+  width: 320px;
+  height: 50px;
+  font-family: 'Inter', sans-serif;
+  font-size: xx-large;
+  text-shadow: floralwhite;
+}
+
+12, 48, 64, 0.22
 /* End of Everything Container */

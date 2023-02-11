@@ -140,6 +140,30 @@ body {
 
   /* Styling for Major Container */
 
+  .major-container {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    width: 80%;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  .single-book
+
+  .single-img {
+    height: 400px;
+  }
+
+.rating {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+  .rating i {
+    color: yellow;
+  }
+
   input[type=button], input[type=submit], input[type=reset] {
     background-color: green;
     color: white;
@@ -152,4 +176,30 @@ body {
     cursor: pointer;
     margin-top: 20px;
   }
+
+  .book-info {
+    /* display: flex; */
+  }
+
+  .primary-info {
+    /* width: 30%; */
+    font-family: 'Mandali', sans-serif;
+    display: flex;
+    justify-content: space-between;
+  }
+
+.characterization
+
+.single-title {
+  font-family: 'Merriweather', serif;
+}
+
+.singles-content {
+  font-family: 'Tienne', serif;
+}
+
+.reviews-name a {
+  text-decoration: none;
+}
+
   

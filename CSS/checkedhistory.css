@@ -119,14 +119,14 @@ select {
 /* This marks the styling for the Sidebar. */
 
 .sidebar {
-    width: 13%;
+    width: 12%;
     font-family: 'Mate', serif;  
     /* font-weight: 400; */
     /* display: flex; */
     /* flex-direction: column; */
     /* align-items: left; */
     /* position: absolute; */
-    padding: 10px;
+    padding: 30px;
     /* line-height: 25px; */
 }
 
@@ -152,7 +152,7 @@ select {
 /* Start of styling for Middle Section */
 
 .middle-section {
-  width: 50%;
+  width: 55%;
   padding: 20px;
 }
 
@@ -219,7 +219,7 @@ img {
 .profile-item {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
+  padding: 10px 10px 10px 30px;
   /* flex-direction: column;
   padding-left: 250px;
   margin-top: -210px;
@@ -270,19 +270,19 @@ img {
   display: flex;
   font-family: 'Inter', sans-serif;
   font-weight: 800;
+  padding-top: 30px;
   /*padding-left: 850px; */
-  margin-top: 7px;
+  /* margin-top: 7px; */
 }
 
 .favourites-grid {
   display: grid;
   /* grid-auto-flow: column; */
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 40%);
   gap: 10px;
+  padding: 15px 0px 10px 10px;
   /* Don't forget to add the repeat 4, 20%*/
   /* grid-template-rows: auto; */
-  /*padding-left: 900px;
-  margin-top: -200px; */
   /* Add PADDING AND MARGIN  */
 }
 
@@ -292,8 +292,8 @@ img {
 }
 
 .favourites_img {
-  width: 230px;
-  height: 400px;
+  width: 180px;
+  height: 220px;
   /* aspect-ratio: 4.5 / 7; */
 }
 
@@ -334,12 +334,14 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 
 .returns {
-  border: 15px solid green;
+  border: 10px solid white;
   /* Do Border for Right, top and bottom. NO LEFT */
 }
 
 .returns_img {
-  width: 100%;
+  width: 150px;
+  height: 180px;
+  /* width: 100%;
   aspect-ratio: 5 / 7;
-  object-fit: cover;
+  object-fit: cover; */
 }
