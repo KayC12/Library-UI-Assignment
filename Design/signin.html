@@ -64,9 +64,10 @@
         </select>
       </div>
     </div>
-    <div class="sidebar">
-      <div class="sidebar_menu">
-        <ul>
+    <!-- Primary Container starts here -->
+    <div class="primary-container">
+        <!-- Sidebar starts here -->
+        <ul class="sidebar_menu">
           <li><a href="#">Ask us</a></li>
           <li><a href="checkedhistory.html">Reading Challenge</a></li>
           <li><a href="catalog.html">Catalog</a></li>
@@ -77,14 +78,26 @@
           <li><a href="#">Volunteer</a></li>
           <li><a href="#">Contact Us</a></li>
         </ul>
+        <!-- Sidebar ends here -->
+        <h2 class="wider-intro">Welcome to Peadmount Library</h2>
+
+      <!-- Content Holder Container starts here -->
+      <div class="content-holder-container">
+        <div class="main-content">
+          <div class="circle">
+            <img 
+              src="../Assets/Sign In Images/Vector.png" 
+              alt="camera pic for creating profile" 
+              class="camera-img"
+            >
+          </div>
       </div>
-    </div>
-    <div class="contact-form">
-      <form action="#">
-        <h2>Welcome to Peadmount Library</h2>
-        <h2>Let's Get Reading!</h2>
-        <h2>Create an Account</h2>
-        <br />
+      <div class="content-holder-container">
+        <div class="contact-form">
+          <h2>Let's Get Reading!</h2>
+          <h2>Create an Account</h2>
+        </div>
+        <form action="#">
         <div>
           <div class="form-categories">
             <label for="name">Full Name</label>
@@ -124,12 +137,21 @@
             name="submit"
             id="submit"
           />
-          <h12>Already Registered? Sign-In</h12>
+          <h12>Already Registered? <a href="#">Sign-In</a></h12>
         </div>
-      </form>
-    </div>
-    <div class="main-content">
-      <div class="circle"></div>
+        </form>
+        </form>
+        </div>
+
+        <div class="contact-form">
+        <form action="#">
+        <br />
+        
+        </div>
+        </div>
+        <!-- Major Content Container ends here -->
+      </div>
+      <!-- Primary Container ends here -->
     </div>
   </body>
 </html>
