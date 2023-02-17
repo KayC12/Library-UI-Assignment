@@ -114,7 +114,7 @@ img {
 
 .primary-container {
   display: flex;
-  padding: 40px 60px 60px 30px;
+  padding: 40px 50px 60px 30px;
 }
 
 /* This marks the styling for the Sidebar. */
@@ -124,6 +124,7 @@ img {
   font-weight: 400;
   /* line-height: 25px; */
   list-style: none;
+  width: 20%;
 }
 
 .sidebar_menu li a {
@@ -137,9 +138,8 @@ img {
 
 .content-holder-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  height: 450px;
-  width: 60%;
+  grid-template-columns: repeat(2, 40%);
+  height: 350px;
   padding: 30px 50px 30px 30px;
 }
 
@@ -157,22 +157,22 @@ img {
 }
 
 .camera-img {
-  width: 190px;
-  height: 170px;
-  background: url();
+  width: 130px;
+  height: 110px;
+  background: url(../Assets/Circle.png);
 }
 
 /* Sign-In Form Styling area  */
 
-/* .contact-form {
+ .contact-form {
     display: flex;
-    justify-content: center;
-    min-height: 100vh;
+    flex-direction: column;
+    /* min-height: 100vh; */
 }
 
 form {
-  padding-top: 60px;
-  padding-left: 350px;
+  padding-top: 40px;
+  /* padding-left: 350px; */
 }
 
 .form-categories {
@@ -198,12 +198,12 @@ form {
   display: flex;
   width: 100%;
   height: 100%;
-  /*left: 160px; */
-  /* align-items: flex-start; */
-  /*justify-content: center;*/
-  /* margin-top: -450px; */
-  /* padding-left: 200px; */
-/* } */
+  left: 160px;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: -450px;
+  padding-left: 200px;
+ }  */
 
 /* .circle {
   background-color: lightgray;
