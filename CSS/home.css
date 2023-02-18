@@ -1,29 +1,63 @@
+@media screen and (max-width: 1000px) {
+  img {
+    width: 100%;
+  }
+
+  .searchbar {
+    display: none;
+  }
+}
+
 body {
   height: 100%;
 }
 
-* {
-    padding: 0;
-    margin: 0;
+*{
+  padding: 0;
+  margin: 0;
+}
+
+/* Styling the 2 big containers */
+
+.body-container {
+  width: 100%;
+  min-width: 330px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: green;
+  /* Remove background colour later */
+}
+
+.sub-body-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: darkgreen;
+  /* Remove background colour later */
 }
 
 /* Styling for the header */
 
 .navbar {
+  width: 100%;
   font-family: 'Inter', sans-serif;
   background-color: #D9D9D9;
   border-radius: 2px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 25px;
-  left: 0px;
+  height: fit-content;
   margin-top: 30px;
+  /* padding: 5px 0px; */
 }
 
 .navbar-left img {
-  width: 80px;
-  height: 80px;
+  max-width: 60px;
+  max-height: 60px;
+  min-width: 40px;
+  min-height: 40px;
   left: 40px;
   top: 15px;
   padding-left: 20px;
@@ -37,8 +71,6 @@ body {
   margin: 5px 9px;
   float: left;
 }
-
-/* .navbar ul {} */
 
 .navbar li a {
   text-decoration: none;
@@ -65,46 +97,99 @@ i {
   color: black;
 }
 
+/* Styling of the Hamburger icon with responsiveness */
+
+.hamburg-navbar-right {
+  display: none;
+}
+
+.hamburg-container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #742C2C;
+  margin: 6px 0px;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+@media screen and (max-width: 550px) {
+  .navbar-right {
+    display: none;
+  }
+
+  .hamburg-navbar-right {
+    display: block;
+    margin-right: 20px;
+  }
+}
+
+/* Completed styling for Hamburger icon with responsiveness added into it */
+
 /*The end of the styling for the header with Navbar. */
 
 /* Stlying for search bar */
 
 .searchbar {
   font-family: 'Inter', sans-serif;
-  top: 20px;
   position: relative;
-  /* will need to try position absolute*/
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   font-size: small;
-  right: 60px;
-  gap: 10px;
+  padding: 8px 10px;
+  width: calc(100% - 20px);
+  /* right: 60px; */
 }
 
 .searchbar li {
   text-decoration: none;
   list-style: none;
   color: black;
-  font-size: medium;
+  font-size: 14px;
   font-weight: 700;
+  margin-right: 20px;
 }
 
-/* May not need this one 
-input {
-    width: 35%;
+.inputfield-text{
+  padding: 5px 10px;
+  font-size: 14px;
+  outline: none;
+  border: #8888881c;
+  border-radius: 3px;
 }
-*/
 
 input[type=text] {
-    width: 90%;
-    box-sizing: border-box;
-    background-color: lightgray;
+  width: 90%;
+  box-sizing: border-box;
+  background-color: lightgray;
 }
 
 select {
-    width: 80%;
-    box-sizing: border-box;
-    background-color: lightgray;
+  width: 80%;
+  box-sizing: border-box;
+  background-color: lightgray;
+}
+
+@media screen and (max-width: 750px) {
+  .searchbar li {
+    display: none;
+  }
 }
 
 /* The end of styling for the Searchbar. */
@@ -120,8 +205,12 @@ img {
 
 .large-container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  padding: 40px 60px 60px 20px;
+  padding: 10px;
+  position: relative;
+  background-color: aqua;
+  /* Change colour to white later on */
 }
 
 /* This marks the styling for the Sidebar. */
@@ -129,8 +218,21 @@ img {
 .sidebar_menu {
   font-family: 'Mate', serif;  
   font-weight: 400;
-  /* line-height: 25px; */
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  position: sticky;
+  top: 0;
+  background-color: darkorchid;
+}
+
+.sidebar_menu li {
+  width: calc(100% - 20px);
+  background-color: darkmagenta;
+  /* Change background colour later */
+  padding: 6px;
+  margin-bottom: 2px;
 }
 
 .sidebar_menu li a {
@@ -143,16 +245,12 @@ img {
 /* Start of Everything Container */
 
 .everything-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  height: 350px;
-  width: 86%;
-  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: burlywood;
 }
-
-/* .left-intro {
-  border: 2px solid brown;
-} */
 
 .title {
   font-family: 'Mate', serif;  
@@ -162,6 +260,7 @@ img {
 
 .left-intro-content {
   display: flex;
+  margin-bottom: 20px;
 }
 
 .left-program {
@@ -201,5 +300,4 @@ img {
   text-shadow: floralwhite;
 }
 
-12, 48, 64, 0.22
 /* End of Everything Container */
