@@ -1,6 +1,7 @@
 @media screen and (max-width: 1000px) {
   img {
     width: 100%;
+    display: block;
   }
 
   .searchbar {
@@ -266,6 +267,8 @@ img {
 .left-program {
   background-image: url("/Assets/Socials.jpg");
   border-radius: 42px;
+  border: 10px solid yellow;
+  
 }
 
 .container-item {
@@ -281,10 +284,12 @@ img {
 
 .right-students {
   background-image: url("/Assets/StackedBooks.png");
+  border: 10px solid yellow;
 }
 
 .right-kids {
   background-image: url("/Assets/KidsCircle.png");
+  border: 10px solid yellow;
 }
 
 .intro-button {
