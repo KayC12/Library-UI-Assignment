@@ -1,92 +1,176 @@
+@media screen and (max-width: 1000px) {
+  img {
+    width: 100%;
+    display: block;
+  }
+
+  .searchbar {
+    display: none;
+  }
+}
+
 body {
   height: 100%;
 }
 
-* {
+*{
   padding: 0;
   margin: 0;
+}
+
+/* Styling the 2 big containers */
+
+.body-container {
+  width: 100%;
+  min-width: 330px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: green;
+  /* Remove background colour later */
+}
+
+.sub-body-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: darkgreen;
+  /* Remove background colour later */
 }
 
 /* Styling for the header */
 
 .navbar {
-font-family: 'Inter', sans-serif;
-background-color: #D9D9D9;
-border-radius: 2px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-height: 25px;
-left: 0px;
-margin-top: 30px;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  background-color: #D9D9D9;
+  border-radius: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: fit-content;
+  margin-top: 30px;
+  /* padding: 5px 0px; */
 }
 
 .navbar-left img {
-width: 80px;
-height: 80px;
-left: 40px;
-top: 15px;
-padding-left: 20px;
+  max-width: 60px;
+  max-height: 60px;
+  min-width: 40px;
+  min-height: 40px;
+  left: 40px;
+  top: 15px;
+  padding-left: 20px;
 }
 
 .navbar li {
-font-weight: 500;
-text-decoration: none;
-padding: 1px 1px;
-list-style: none;
-margin: 5px 9px;
-float: left;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 1px 1px;
+  list-style: none;
+  margin: 5px 9px;
+  float: left;
 }
 
-/* .navbar ul {} */
-
 .navbar li a {
-text-decoration: none;
-padding: 1px 1px;
-color: black;
+  text-decoration: none;
+  padding: 1px 1px;
+  color: black;
 }
 
 .navbar-right {
-display: flex;
-font-weight: 500;
+  display: flex;
+  font-weight: 500;
 }
 
 .navbar-right a {
-display: flex;
-font-weight: 500;
-padding: 1px 1px;
-margin: 5px 9px;
+  display: flex;
+  font-weight: 500;
+  padding: 1px 1px;
+  margin: 5px 9px;
 }
 
 i {
-width: 50px;
-display: flex;
-align-self: center;
-color: black;
+  width: 50px;
+  display: flex;
+  align-self: center;
+  color: black;
 }
 
-/*The end of the styling for the header with Navbar. */
+/* Styling of the Hamburger icon with responsiveness */
 
+.hamburg-navbar-right {
+  display: none;
+}
+
+.hamburg-container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #742C2C;
+  margin: 6px 0px;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+@media screen and (max-width: 550px) {
+  .navbar-right {
+    display: none;
+  }
+
+  .hamburg-navbar-right {
+    display: block;
+    margin-right: 20px;
+  }
+}
+
+/* Completed styling for Hamburger icon with responsiveness added into it */
+/*The end of the styling for the header with Navbar. */
 /* Stlying for search bar */
 
 .searchbar {
-font-family: 'Inter', sans-serif;
-top: 20px;
-position: relative;
-/* will need to try position absolute*/
-display: flex;
-justify-content: flex-end;
-font-size: small;
-right: 60px;
-gap: 10px;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: small;
+  padding: 8px 10px;
+  width: calc(100% - 20px);
+  /* right: 60px; */
 }
 
 .searchbar li {
-text-decoration: none;
-list-style: none;
-color: black;
-font-size: medium;
-font-weight: 700;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  font-size: 14px;
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+.inputfield-text{
+  padding: 5px 10px;
+  font-size: 14px;
+  outline: none;
+  border: #8888881c;
+  border-radius: 3px;
 }
 
 input[type=text] {
@@ -101,6 +185,12 @@ select {
   background-color: lightgray;
 }
 
+@media screen and (max-width: 750px) {
+  .searchbar li {
+    display: none;
+  }
+}
+
 /* The end of styling for the Searchbar. */
 
 /* Rules to make images easier to work with */
@@ -108,13 +198,18 @@ select {
 img {
   max-width: 100%;
   display: block;
-} 
+}  
 
 /* Styling for the Primary Container */
 
 .primary-container {
   display: flex;
-  padding: 40px 60px 60px 30px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  position: relative;
+  background-color: aqua;
+  /* Change colour to white later on */
 }
 
 /* This marks the styling for the Sidebar. */
@@ -122,8 +217,21 @@ img {
 .sidebar_menu {
   font-family: 'Mate', serif;  
   font-weight: 400;
-  /* line-height: 25px; */
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  position: sticky;
+  top: 0;
+  background-color: darkorchid;
+}
+
+.sidebar_menu li {
+  width: calc(100% - 20px);
+  background-color: darkmagenta;
+  /* Change background colour later */
+  padding: 6px;
+  margin-bottom: 2px;
 }
 
 .sidebar_menu li a {
@@ -136,14 +244,24 @@ img {
 /* Styling of Content Holder Container */
 
 .content-holder-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  height: 450px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
   width: 60%;
-  padding: 30px 50px 30px 30px;
+  /* Maybe add a Margin top of 10px */
+  background-color: burlywood;
 }
 
-.wider-intro, .contact-form h2 {
+.wider-intro {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+  
+.contact-form-intro {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 28px;
@@ -153,16 +271,53 @@ img {
 .wider-intro {
   color: #742C2C;
   display: flex;
-  justify-self: center;
+  justify-content: center;
+}
+
+.reading1 {
+  color: #ED907F;
+  margin-bottom: 15px;
+}
+
+.account1 {
+  color: #984F1F;
 }
 
 .camera-img {
-  width: 190px;
-  height: 170px;
-  background: url();
+  width: 170px;
+  height: 150px;
+  background-image: url("/Assets/Ellipse7.png");
 }
 
+/* .circle {
+  background-image: url("/Assets/Ellipse7.png");
+  justify-content: center;
+} */
+
 /* Sign-In Form Styling area  */
+
+.contact-form {
+  margin-top: 20px;
+}
+
+.registration input {
+  width: 40%;
+  background-color: green;
+  color: white;
+  border-radius: 10px;
+}
+
+.form-categories {
+  padding-bottom: 15px;
+  width: 100%;
+}
+
+.form-categories input [type=text] {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: lightgray;
+}
+
 
 /* .contact-form {
     display: flex;
@@ -175,22 +330,6 @@ form {
   padding-left: 350px;
 }
 
-.form-categories {
-  width: 90%;
-}
-
-.form-categories input [type=text] {
-    width: 90%;
-    box-sizing: border-box;
-    background-color: lightgray;
-}
-
-.registration input {
-    width: 40%;
-    background-color: green;
-    color: white;
-    border-radius: 15px;
-}
 
 /*styling for the circle. */
 
