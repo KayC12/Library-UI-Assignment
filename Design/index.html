@@ -32,50 +32,36 @@
             ><img src="../Assets/Ellipse 1.png" alt="Logo for Peadmont Library"
           /></a>
         </div>
-        <div class="navbar-right">
+        <ul class="navbar-right">
           <li><a href="location.html">Location</a></li>
           <li><a href="events.html">Events</a></li>
           <li><a href="about.html">About US</a></li>
           <li><a href="signin.html">Sign-in</a></li>
-          <a href="#"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>
-        </div>
-
-        <span class="hamburg-navbar-right">
-          <!-- Hamburger section right here -->
-          <div class="hamburg-container" onclick="myFunction(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </div>
-        </span>
+          <li><a href="#"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a></li>
+        </ul>
       </nav>
     </header>
 
     <div class="sub-body-container">
       <div class="searchbar">
-        <li>Search Catalog:</li>
+        <h4>Search Catalog:</h4>
         <div>
-          <label for="title"></label>
           <input
             type="text"
             placeholder="Title"
             id="title"
-            class="inputfield-text"
           />
         </div>
 
         <div>
-          <label for="isbn"></label>
           <input
             type="text"
             placeholder="ISBN"
             id="isbn"
-            class="inputfield-text"
           />
         </div>
 
         <div>
-          <label for="format"></label>
           <select name="format" id="format" class="inputfield-text">
             <option value="Format">Format</option>
             <option value="Paperback">Paperback</option>
@@ -85,7 +71,6 @@
         </div>
 
         <div>
-          <label for="genre"></label>
           <select name="genre" id="genre" class="inputfield-text">
             <option value="Genre">Genre</option>
             <option value="Romance">Romance</option>
@@ -111,6 +96,15 @@
           <li><a href="#">Volunteer</a></li>
           <li><a href="#">Contact Us</a></li>
         </ul>
+
+        <span class="hamburger-sidebar">
+          <!-- Hamburger section right here -->
+          <div class="hamburg-container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </span>
         <!-- sidebar ends here -->
 
         <!-- Everthing Container starts here -->
@@ -134,9 +128,8 @@
               repellat.
             </p>
           </div>
-
           <div class="right-students container-item">
-            <button class="intro-button">Students</button>
+            <button clss="intro-button">Students</button>
           </div>
 
           <div class="left-program container-item">
