@@ -1,114 +1,127 @@
 body {
-    height: 100%;
-  }
-  
-  * {
-      padding: 0;
-      margin: 0;
-  }
+  height: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Styling the 2 big containers */
+
+.body-container {
+  width: 100%;
+  background-color: green;
+  /* Remove background colour later */
+}
+
+.sub-body-container {
+  background-color: red;
+  /* Remove background colour later */
+}
   
   /* Styling for the header */
   
   .navbar {
+    width: 100%;
     font-family: 'Inter', sans-serif;
     background-color: #D9D9D9;
-    border-radius: 2px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 25px;
-    left: 0px;
     margin-top: 30px;
+    padding: 5px 20px;
   }
   
   .navbar-left img {
-    width: 80px;
-    height: 80px;
-    left: 40px;
-    top: 15px;
-    padding-left: 20px;
+    width: 38px;
   }
   
   .navbar li {
     font-weight: 500;
+    font-size: 14px;
     text-decoration: none;
-    padding: 1px 1px;
-    list-style: none;
-    margin: 5px 9px;
-    float: left;
+    padding: 4px;
   }
-  
-  /* .navbar ul {} */
   
   .navbar li a {
     text-decoration: none;
-    padding: 1px 1px;
     color: black;
   }
   
   .navbar-right {
     display: flex;
+    list-style-type: none;
     font-weight: 500;
-  }
-  
-  .navbar-right a {
-    display: flex;
-    font-weight: 500;
-    padding: 1px 1px;
-    margin: 5px 9px;
   }
   
   i {
     width: 50px;
-    display: flex;
-    align-self: center;
-    color: black;
   }
   
+  /* Styling of the Hamburger icon with responsiveness */
+
+  .hamburger-sidebar {
+    display: none;
+  }
+
+  .hamburg-container {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #742C2C;
+    margin: 6px 0px;
+    transition: 0.4s;
+  }
+
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+
+  .change .bar2 {
+    opacity: 0;
+  }
+
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+  /* Completed styling for Hamburger icon with responsiveness added into it */
   /*The end of the styling for the header with Navbar. */
-  
   /* Stlying for search bar */
   
   .searchbar {
     font-family: 'Inter', sans-serif;
-    top: 20px;
-    position: relative;
-    /* will need to try position absolute*/
     display: flex;
-    justify-content: flex-end;
-    font-size: small;
-    right: 60px;
-    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    padding: 10px 5px;
   }
   
-  .searchbar li {
-    text-decoration: none;
-    list-style: none;
+  .searchbar h4 {
     color: black;
-    font-size: medium;
-    font-weight: 700;
+    font-weight: 400;
   }
   
-  /* May not need this one 
-  input {
-      width: 35%;
-  }
-  */
-  
-  input[type=text] {
-      width: 90%;
-      box-sizing: border-box;
-      background-color: lightgray;
-  }
-  
-  select {
-      width: 80%;
-      box-sizing: border-box;
-      background-color: lightgray;
+  input[type=text], select {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: lightgray;
+    padding: 5px;
+    outline: none;
+    border: #8888881c;
+    border-radius: 3px;
+    margin: 2px;
   }
   
   /* The end of styling for the Searchbar. */
-  
   /* Rules to make images easier to work with */
   
   img {
@@ -116,19 +129,28 @@ body {
     display: block;
   } 
 
+  /* Styling Gigantic container */
+
   .gigantic-container {
     display: flex;
     justify-content: space-between;
-    padding: 40px 60px 60px 35px;  
+    padding: 10px;
+    background-color: aqua;
+    /* Change colour to white later on */   
   }
 
   /* This marks the styling for the Sidebar. */
 
-.sidebar_menu {
-    font-family: 'Mate', serif;  
+  .sidebar_menu {
+    font-family: 'Mate', serif;
     font-weight: 400;
-    /* line-height: 25px; */
     list-style: none;
+    width: 20%;
+    background-color: darkorchid;
+  }
+  
+  .sidebar_menu li {
+    padding: 6px 8px;
   }
   
   .sidebar_menu li a {
@@ -137,15 +159,12 @@ body {
   }
   
   /* End of Sidebar menu end styling. */
-
   /* Styling for Major Container */
 
   .major-container {
-    display: grid;
-    grid-template-columns: repeat(2, 40%);
-    width: 80%;
-    padding: 20px;
-    gap: 10px;
+    width: 85%;
+    padding: 10px;
+    background-color: burlywood;
   }
 
   .single-book
@@ -177,12 +196,7 @@ body {
     margin-top: 20px;
   }
 
-  .book-info {
-    /* display: flex; */
-  }
-
   .primary-info {
-    /* width: 30%; */
     font-family: 'Mandali', sans-serif;
     display: flex;
     justify-content: space-between;
@@ -202,4 +216,66 @@ body {
   text-decoration: none;
 }
 
-  
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  /* .sidebar {
+    display: flex;
+    flex-direction: column;
+  } */
+
+  /* .hamburger-sidebar {
+    display: block;
+    margin-right: 5px;
+  } */
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .navbar{
+    height: 25px;
+    left: 0px;
+  }
+  .navbar-left img {
+    width: 55px;
+    height: 55px;
+    left: 40px;
+    top: 15px;
+    padding-left: 20px;
+  } 
+  .searchbar {
+    display: flex;
+    justify-content: flex-end;
+    font-size: medium;
+  }
+  .major-container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 10px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .navbar{
+    height: 25px;
+    left: 0px;
+  }
+  .navbar-left img {
+    width: 55px;
+    height: 55px;
+    left: 40px;
+    top: 15px;
+    padding-left: 20px;
+  }
+  .searchbar {
+    display: flex;
+    justify-content: flex-end;
+    font-size: medium;
+  }
+  .major-container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 10px;
+  }
+}
