@@ -1,19 +1,10 @@
-@media screen and (max-width: 1000px) {
-  img {
-    width: 100%;
-    display: block;
-  }
-
-  .searchbar {
-    display: none;
-  }
-}
-
 body {
   height: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
-*{
+* {
   padding: 0;
   margin: 0;
 }
@@ -22,20 +13,12 @@ body {
 
 .body-container {
   width: 100%;
-  min-width: 330px;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
   background-color: green;
   /* Remove background colour later */
 }
 
 .sub-body-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  background-color: darkgreen;
+  background-color: red;
   /* Remove background colour later */
 }
 
@@ -45,62 +28,43 @@ body {
   width: 100%;
   font-family: 'Inter', sans-serif;
   background-color: #D9D9D9;
-  border-radius: 2px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: fit-content;
+  /* height: fit-content; */
   margin-top: 30px;
-  /* padding: 5px 0px; */
+  padding: 5px 20px;
 }
 
 .navbar-left img {
-  max-width: 60px;
-  max-height: 60px;
-  min-width: 40px;
-  min-height: 40px;
-  left: 40px;
-  top: 15px;
-  padding-left: 20px;
+  width: 38px;
 }
 
 .navbar li {
   font-weight: 500;
+  font-size: 14px;
   text-decoration: none;
-  padding: 1px 1px;
-  list-style: none;
-  margin: 5px 9px;
-  float: left;
+  padding: 4px;
 }
 
 .navbar li a {
   text-decoration: none;
-  padding: 1px 1px;
   color: black;
 }
 
 .navbar-right {
   display: flex;
+  list-style-type: none;
   font-weight: 500;
-}
-
-.navbar-right a {
-  display: flex;
-  font-weight: 500;
-  padding: 1px 1px;
-  margin: 5px 9px;
 }
 
 i {
   width: 50px;
-  display: flex;
-  align-self: center;
-  color: black;
 }
 
 /* Styling of the Hamburger icon with responsiveness */
 
-.hamburg-navbar-right {
+.hamburger-sidebar {
   display: none;
 }
 
@@ -129,21 +93,8 @@ i {
   transform: translate(0, -11px) rotate(45deg);
 }
 
-@media screen and (max-width: 550px) {
-  .navbar-right {
-    display: none;
-  }
-
-  .hamburg-navbar-right {
-    display: block;
-    margin-right: 20px;
-  }
-}
-
 /* Completed styling for Hamburger icon with responsiveness added into it */
-
 /*The end of the styling for the header with Navbar. */
-
 /* Rules to make images easier to work with */
 
 img {
@@ -155,10 +106,8 @@ img {
 
 .mega-giant-container {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   padding: 10px;
-  position: relative;
   background-color: aqua;
   /* Change colour to white later on */
 }
@@ -166,23 +115,15 @@ img {
 /* This marks the styling for the Sidebar. */
 
 .sidebar_menu {
-  font-family: 'Mate', serif;  
+  font-family: 'Mate', serif;
   font-weight: 400;
   list-style: none;
-  display: flex;
-  flex-direction: column;
   width: 20%;
-  position: static;
-  top: 0;
   background-color: darkorchid;
 }
 
 .sidebar_menu li {
-  width: calc(100% - 20px);
-  background-color: darkmagenta;
-  /* Change background colour later */
-  padding: 6px;
-  margin-bottom: 2px;
+  padding: 6px 8px;
 }
 
 .sidebar_menu li a {
@@ -191,15 +132,12 @@ img {
 }
 
 /* End of Sidebar menu end styling. */
-
 /* Styling for Giant Container */
 
 .giant-container, .about-us {
-  display: flex;
-  flex-direction: column;
-  /* padding: 5px; */
+  padding: 5px;
   width: 100%;
-  margin-top: 15px;
+  margin-top: 0px;
   background-color: burlywood;
 }
 
@@ -230,7 +168,7 @@ img {
   margin-top: .8rem;
 }
 
- .librarian {
+.librarian {
   margin-top: 5px;
 } 
 
@@ -247,5 +185,93 @@ img {
   padding-top: 10px;
 }
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  /* .sidebar {
+    display: flex;
+    flex-direction: column;
+  } */
 
+  /* .hamburger-sidebar {
+    display: block;
+    margin-right: 5px;
+  } */
+} 
 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .navbar{
+    height: 25px;
+    left: 0px;
+  }
+  .navbar-left img {
+    width: 55px;
+    height: 55px;
+    left: 40px;
+    top: 15px;
+    padding-left: 20px;
+  }
+  .mega-giant-container {
+    padding: 5px;
+  }
+  .sidebar_menu {
+    width: 15%;
+  }
+  .giant-container {
+    display: flex;
+    width: 100%;
+    padding: 0px;
+  }
+  .about-us {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: auto;
+    gap: 5px;
+  }
+  .about-peadmount, .our-mission, .our-why, .librarian {
+    border: 5px solid red;
+  }
+  .our-mission {
+    margin-top: 0px;
+  } 
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .navbar{
+    height: 25px;
+    left: 0px;
+  }
+  .navbar-left img {
+    width: 55px;
+    height: 55px;
+    left: 40px;
+    top: 15px;
+    padding-left: 20px;
+  }
+  .searchbar {
+    display: flex;
+    justify-content: flex-end;
+    font-size: medium;
+  }
+  .sidebar_menu {
+    width: 15%;
+  }
+  .giant-container {
+    display: flex;
+    width: 100%;
+    padding: 15px;
+  }
+  .about-us {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: auto;
+    gap: 5px;
+  }
+  .about-peadmount, .our-mission, .our-why, .librarian {
+    border: 5px solid red;
+  }
+  .our-mission {
+    margin-top: 0px;
+  } 
+}
