@@ -233,6 +233,22 @@ padding: 5px;
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .navbar{
+    height: 25px;
+    left: 0px;
+  }
+  .navbar-left img {
+    width: 55px;
+    height: 55px;
+    left: 40px;
+    top: 15px;
+    padding-left: 20px;
+  }
+  .searchbar {
+    display: flex;
+    justify-content: flex-end;
+    font-size: medium;
+  }
   .everything-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -241,6 +257,22 @@ padding: 5px;
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .navbar{
+    height: 25px;
+    left: 0px;
+  }
+  .navbar-left img {
+    width: 55px;
+    height: 55px;
+    left: 40px;
+    top: 15px;
+    padding-left: 20px;
+  }
+  .searchbar {
+    display: flex;
+    justify-content: flex-end;
+    font-size: medium;
+  }
   .everything-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
