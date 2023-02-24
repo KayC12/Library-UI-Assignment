@@ -1,302 +1,180 @@
-/* body {
-  font-family: 'Inter', sans-serif;
-} */
-
-* {
-    padding: 0;
-    margin: 0;
+body {
+  height: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
-
+* {
+  padding: 0;
+  margin: 0;
+}
+/* Styling the 2 big containers */
+.body-container {
+  width: 100%;
+}
+.sub-body-container {
+  background-color: white;
+}
 /* Styling for the header */
-
 .navbar {
+  width: 100%;
   font-family: 'Inter', sans-serif;
   background-color: #D9D9D9;
-  border-radius: 2px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 25px;
-  left: 0px;
   margin-top: 30px;
+  padding: 5px 20px;
 }
-
 .navbar-left img {
-  width: 80px;
-  height: 80px;
-  left: 40px;
-  top: 15px;
-  padding-left: 20px;
+  width: 38px;
 }
-
 .navbar li {
   font-weight: 500;
+  font-size: 14px;
   text-decoration: none;
-  padding: 1px 1px;
-  list-style: none;
-  margin: 5px 9px;
-  float: left;
+  padding: 4px;
 }
-
-/* .navbar ul {} */
-
 .navbar li a {
   text-decoration: none;
-  padding: 1px 1px;
   color: black;
 }
-
 .navbar-right {
   display: flex;
+  list-style-type: none;
   font-weight: 500;
 }
-
-.navbar-right a {
-  display: flex;
-  font-weight: 500;
-  padding: 1px 1px;
-  margin: 5px 9px;
-}
-
 i {
   width: 50px;
-  display: flex;
-  align-self: center;
-  color: black;
 }
-
+/* Styling of the Hamburger icon with responsiveness */
+.hamburger-sidebar {
+  display: none;
+}
+.hamburg-container {
+  display: inline-block;
+  cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #742C2C;
+  margin: 6px 0px;
+  transition: 0.4s;
+}
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+.change .bar2 {
+  opacity: 0;
+}
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+/* Completed styling for Hamburger icon with responsiveness added into it */
 /*The end of the styling for the header with Navbar. */
-
 /* Stlying for search bar */
-
 .searchbar {
   font-family: 'Inter', sans-serif;
-  top: 20px;
-  position: relative;
-  /* will need to try position absolute*/
-  display: flex;
-  justify-content: flex-end;
-  font-size: small;
-  right: 60px;
-  gap: 10px;
-}
-
-.searchbar li {
-  text-decoration: none;
-  list-style: none;
-  color: black;
-  font-size: medium;
-  font-weight: 700;
-}
-
-/* May not need this one 
-input {
-    width: 35%;
-}
-*/
-
-input[type=text] {
-    width: 90%;
-    box-sizing: border-box;
-    background-color: lightgray;
-}
-
-select {
-    width: 80%;
-    box-sizing: border-box;
-    background-color: lightgray;
-}
-
-/* The end of styling for the Searchbar. */
-
-/* Start of Styling for the Main Container */
-
-.main-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  padding: 10px 5px;
 }
-
-/* This marks the styling for the Sidebar. */
-
-.sidebar {
-    width: 12%;
-    font-family: 'Mate', serif;  
-    /* font-weight: 400; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: left; */
-    /* position: absolute; */
-    padding: 30px;
-    /* line-height: 25px; */
-}
-
-/* .sidebar .sidebar_menu {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-}
-*/
-
-.sidebar .sidebar_menu li {
-  list-style: none;
-}
-
-.sidebar .sidebar_menu li a {
-  text-decoration: none;
-  /* row-gap: 50px; */
+.searchbar h4 {
   color: black;
+  font-weight: 400;
 }
-
-/* End of Sidebar menu end styling. */
-
-/* Start of styling for Middle Section */
-
-.middle-section {
-  width: 55%;
-  padding: 20px;
+input[type=text], select {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: lightgray;
+  padding: 5px;
+  outline: none;
+  border: #8888881c;
+  border-radius: 3px;
+  margin: 2px;
 }
-
-.checkout {
-  /* display: flex;
-  padding-left: 280px;
-  padding-top: 10px; */
-  text-align: center;
-  padding: 20px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 900;
-}
-
-
+/* The end of styling for the Searchbar. */
 /* Rules to make images easier to work with */
-
 img {
   max-width: 100%;
   display: block;
-} 
-
-/* Styling for the Profile Container */
-
-/* DO NOT FORGET TO STYLE THE CHECK OUT HISTORY H2 */
-
-.profile-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* width: 520px;
-  height: 250px;
-  margin-top: 7px;
-  padding-left: 200px; */
-  /* border: 2px solid yellow; */
 }
-
-.profile-container h2 {
-  font-family: 'Inter', sans-serif;
-  font-weight: 800;
-  padding-left: 70px;
-}
-
-/* .profile-grid {
+.main-container {
   display: flex;
   flex-direction: column;
-  font-family: 'Mate', serif;  
+  justify-content: space-between;
+}
+/* This marks the styling for the Sidebar. */
+.sidebar_menu {
+  font-family: 'Mate', serif;
   font-weight: 400;
-} */
-
+  list-style: none;
+  width: 20%;
+}
+.sidebar_menu li {
+  padding: 6px 8px;
+}
+.sidebar_menu li a {
+  text-decoration: none;
+  color: black;
+}
+/* End of Sidebar menu end styling. */
+/* Start of styling for Middle Section */
+.middle-section {
+  padding: 10px;
+}
+.checkout {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+/* Styling for the Profile Container */
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.profile-container h2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  padding-left: 70px;
+}
 .profile-img {
   text-align: center;
   height: 220px;
   width: 220px;
 }
-
-.profile_img
-
 .profile a {
   color: #2477D9; 
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: xx-small;
 }
-
 .profile-item {
   display: flex;
   justify-content: space-between;
   padding: 10px 10px 10px 30px;
-  /* flex-direction: column;
-  padding-left: 250px;
-  margin-top: -210px;
-  gap: 19px; */
 }
-
-.profile-item p {
-  padding: 0px 10px;
-}
-
-/* .profile_content2 {
-  display: flex;
-  flex-direction: column;
-  padding-left: 350px;
-  margin-top: -135px;
-  gap: 5px;
-} */
-
-/* .minor_genres {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: xx-small;
-  display: flex;
-  margin-left: 350px;
-  margin-top: 10px;
-}
-
-.minor_genres a {
-  text-decoration: none;
-  color: #2477D9; 
-  text-decoration-line: underline;
-}
-*/
-
 /* Come back to Profile container */
-
 /* Styling for the Favourites Container. */
-
-.favourites-container {
-  display: flex;
-  /*justify-content: flex-end; */
-  flex-direction: column;
-  /* width: 100%; */
-  /*height: 650px; */
-  /* margin-top: 20px; */
-}
-
 .favourites-container h2 {
   display: flex;
   font-family: 'Inter', sans-serif;
   font-weight: 800;
   padding-top: 30px;
-  /*padding-left: 850px; */
-  /* margin-top: 7px; */
 }
-
 .favourites-grid {
   display: grid;
-  /* grid-auto-flow: column; */
   grid-template-columns: repeat(2, 40%);
   gap: 10px;
   padding: 15px 0px 10px 10px;
-  /* Don't forget to add the repeat 4, 20%*/
-  /* grid-template-rows: auto; */
-  /* Add PADDING AND MARGIN  */
 }
-
-.favourites {
-  /* aspect-ratio: 4.5 / 7; */
-  /* border: 15px solid brown; */
-}
-
 .favourites_img {
   width: 180px;
   height: 220px;
-  /* aspect-ratio: 4.5 / 7; */
 }
-
 input[type=button], input[type=submit], input[type=reset] {
   background-color: green;
   color: white;
@@ -309,39 +187,75 @@ input[type=button], input[type=submit], input[type=reset] {
   cursor: pointer;
   margin-top: 5px;
 }
-
 /* Styling for Recent returns */
-
 .returns-container {
   display: flex;
   flex-direction: column;
   width: 100%;
   margin-top: 40px;
-  /* padding-left: 180px; */
 }
-
 .returns-container h2 {
   font-family: 'Mate', serif;  
 }
-
 .returns-grid {
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: repeat(5, 1fr);
-  /* ADD Repeat 5, 20%  */
-  grid-template-rows: auto;
-  /* ADD MARGIN AND PADDING  */
 }
-
 .returns {
-  border: 10px solid white;
-  /* Do Border for Right, top and bottom. NO LEFT */
+  border: 8px solid white;
 }
-
 .returns_img {
-  width: 150px;
-  height: 180px;
-  /* width: 100%;
-  aspect-ratio: 5 / 7;
-  object-fit: cover; */
+   width: 100%;
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  /* .sidebar {
+    display: flex;
+    flex-direction: column;
+  } */
+
+  /* .hamburger-sidebar {
+    display: block;
+    margin-right: 5px;
+  } */
+} 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .navbar{
+    height: 25px;
+  }
+  .navbar-left img {
+    width: 55px;
+    height: 55px;
+    padding-left: 20px;
+  }
+  .navbar-right {
+    font-weight: 500;
+  }
+  .searchbar {
+    display: flex;
+    justify-content: flex-end;
+    font-size: medium;
+  }
+  .sidebar_menu {
+    width: 25%;
+    padding: 10px;
+  }
+  .middle-section {
+    width: 100%;
+  }
+  .favourites-container {
+    width: 45%;
+  }
+  .returns_img {
+    width: 150px;
+    height: 180px;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /* .sidebar_menu {
+    width: 25%;
+  } */
 }
