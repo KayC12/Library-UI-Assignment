@@ -10,12 +10,9 @@ body {
 /* Styling the 2 big containers */
 .body-container {
   width: 100%;
-  background-color: green;
-  /* Remove background colour later */
 }
 .sub-body-container {
-  background-color: red;
-  /* Remove background colour later */
+  background-color: white;
 }
 /* Styling for the header */
 .navbar {
@@ -28,44 +25,35 @@ body {
   margin-top: 30px;
   padding: 5px 20px;
 }
-
 .navbar-left img {
   width: 38px;
 }
-
 .navbar li {
   font-weight: 500;
   font-size: 14px;
   text-decoration: none;
   padding: 4px;
 }
-
 .navbar li a {
   text-decoration: none;
   color: black;
 }
-
 .navbar-right {
   display: flex;
   list-style-type: none;
   font-weight: 500;
 }
-
 i {
   width: 50px;
 }
-
 /* Styling of the Hamburger icon with responsiveness */
-
 .hamburger-sidebar {
   display: none;
 }
-
 .hamburg-container {
   display: inline-block;
   cursor: pointer;
 }
-
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
@@ -73,23 +61,18 @@ i {
   margin: 6px 0px;
   transition: 0.4s;
 }
-
 .change .bar1 {
   transform: translate(0, 11px) rotate(-45deg);
 }
-
 .change .bar2 {
   opacity: 0;
 }
-
 .change .bar3 {
   transform: translate(0, -11px) rotate(45deg);
 }
-
 /* Completed styling for Hamburger icon with responsiveness added into it */
 /*The end of the styling for the header with Navbar. */
 /* Stlying for search bar */
-
 .searchbar {
   font-family: 'Inter', sans-serif;
   display: flex;
@@ -98,12 +81,10 @@ i {
   font-size: 12px;
   padding: 10px 5px;
 }
-
 .searchbar h4 {
   color: black;
   font-weight: 400;
 }
-
 input[type=text], select {
   width: 100%;
   box-sizing: border-box;
@@ -124,7 +105,6 @@ img {
 .widest-container {
   display: flex;
   justify-content: space-between;
-  background-color: aqua;
 }
 /* This marks the styling for the Sidebar. */
 .sidebar_menu {
@@ -132,7 +112,6 @@ img {
   font-weight: 400;
   list-style: none;
   width: 20%;
-  background-color: darkorchid;
 }
 .sidebar_menu li {
   padding: 6px 8px;
@@ -145,7 +124,6 @@ img {
 .books-sub-widest {
   display: flex;
   align-items: center;
-  background-color: blue;
 }
 .wide-container {
   width: 30%;
@@ -154,38 +132,21 @@ img {
   display: flex;
   padding: 5px; 
   margin-bottom: 10px;
-  background-color: burlywood;
 }
 /* Stlying for the grid catalog */
 .book-container h4 {
   font-family: 'Inter', sans-serif;
   padding: 8px;  
 }
-
 .book-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-bottom: 10px;
   gap: 15px;
 }
-
-/* .stacked {
-  display: grid;
-}
-
-.stacked > * {
-  grid-column: 1 / 3;
-  grid-row: 1 / 3;
-}  */
-
-.book a {
-  /* aspect-ratio: 12.5 / 16.5; */
-}
-
 .book_img {
   width: 100%;
 }
-
 input[type=button], input[type=message] {
   background-color: white;
   color: black;
@@ -194,9 +155,6 @@ input[type=button], input[type=message] {
   cursor: pointer;
   margin: 5px auto;
 }
-
-/* Style button */
-
 input[type=button], input[type=submit], input[type=reset] {
   background-color: green;
   color: white;
@@ -206,22 +164,17 @@ input[type=button], input[type=submit], input[type=reset] {
   border-radius: 8px;
   cursor: pointer;
 }
-
 /* Styling for the single book. */
-
 .loner-book {
-  border: 2px solid purple;
+  border: 2px;
   width: 120px;
   height: 200px;
   margin: 2px auto;
   text-align: center;
 }
-
 .loner_img {
   width: 100%;
 }
-
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
   /* .sidebar {
@@ -234,7 +187,6 @@ input[type=button], input[type=submit], input[type=reset] {
     margin-right: 5px;
   } */
 } 
-
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .navbar{
@@ -275,7 +227,6 @@ input[type=button], input[type=submit], input[type=reset] {
     height: 250px;
   }
 }
-
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .widest-container {
