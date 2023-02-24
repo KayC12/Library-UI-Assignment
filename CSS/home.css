@@ -3,27 +3,18 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
 }
-
 * {
   padding: 0;
   margin: 0;
 }
-
 /* Styling the 2 big containers */
-
 .body-container {
   width: 100%;
-  background-color: green;
-  /* Remove background colour later */
 }
-
 .sub-body-container {
-  background-color: red;
-  /* Remove background colour later */
+  background-color: white;
 }
-
 /* Styling for the header */
-
 .navbar {
   width: 100%;
   font-family: 'Inter', sans-serif;
@@ -31,48 +22,38 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* height: fit-content; */
   margin-top: 30px;
   padding: 5px 20px;
 }
-
 .navbar-left img {
   width: 38px;
 }
-
 .navbar li {
   font-weight: 500;
   font-size: 14px;
   text-decoration: none;
   padding: 4px;
 }
-
 .navbar li a {
   text-decoration: none;
   color: black;
 }
-
 .navbar-right {
   display: flex;
   list-style-type: none;
   font-weight: 500;
 }
-
 i {
   width: 50px;
 }
-
 /* Styling of the Hamburger icon with responsiveness */
-
 .hamburger-sidebar {
   display: none;
 }
-
 .hamburg-container {
   display: inline-block;
   cursor: pointer;
 }
-
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
@@ -80,23 +61,18 @@ i {
   margin: 6px 0px;
   transition: 0.4s;
 }
-
 .change .bar1 {
   transform: translate(0, 11px) rotate(-45deg);
 }
-
 .change .bar2 {
   opacity: 0;
 }
-
 .change .bar3 {
   transform: translate(0, -11px) rotate(45deg);
 }
-
 /* Completed styling for Hamburger icon with responsiveness added into it */
 /*The end of the styling for the header with Navbar. */
 /* Stlying for search bar */
-
 .searchbar {
   font-family: 'Inter', sans-serif;
   display: flex;
@@ -105,12 +81,10 @@ i {
   font-size: 12px;
   padding: 10px 5px;
 }
-
 .searchbar h4 {
   color: black;
   font-weight: 400;
 }
-
 input[type=text], select {
   width: 100%;
   box-sizing: border-box;
@@ -121,69 +95,51 @@ input[type=text], select {
   border-radius: 3px;
   margin: 2px;
 }
-
 /* The end of styling for the Searchbar. */
 /* Rules to make images easier to work with */
-
 img {
   max-width: 100%;
   display: block;
 }
-
 /* styling for the Large Container */
-
 .large-container {
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  background-color: aqua;
-  /* Change colour to white later on */
 }
-
 /* This marks the styling for the Sidebar. */
-
 .sidebar_menu {
   font-family: 'Mate', serif;
   font-weight: 400;
   list-style: none;
   width: 20%;
-  background-color: darkorchid;
 }
-
 .sidebar_menu li {
   padding: 6px 8px;
 }
-
 .sidebar_menu li a {
   text-decoration: none;
   color: black;
 }
-
 /* End of Sidebar menu end styling. */
 /* Start of Everything Container */
-
 .everything-container {
   padding: 10px;
   margin-bottom: 10px;
-  background-color: burlywood;
 }
-
 .title {
   font-family: 'Mate', serif;
   font-size: 30px;
   padding: 5px;
 }
-
 .left-intro-content {
 padding: 5px;
 }
-
 .left-program {
   background-image: url("/Assets/Socials.jpg");
   border-radius: 42px;
-  border: 10px solid yellow;
+  border: 10px;
 }
-
 .container-item {
   height: 350px;
   background-size: cover;
@@ -192,17 +148,14 @@ padding: 5px;
   align-items: center;
   justify-content: center;
 }
-
 .right-students {
   background-image: url("/Assets/StackedBooks.png");
-  border: 10px solid white;
+  border: 10px;
 }
-
 .right-kids {
   background-image: url("/Assets/KidsCircle.png");
-  border: 10px solid yellow;
+  border: 10px;
 }
-
 .intro-button {
   display: inline-block;
   border: 1px solid rgba(12, 48, 64, 0.22);
@@ -215,22 +168,18 @@ padding: 5px;
   font-size: xx-large;
   text-shadow: floralwhite;
 }
-
 /* End of Everything Container */
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
   /* .sidebar {
     display: flex;
     flex-direction: column;
   } */
-
   /* .hamburger-sidebar {
     display: block;
     margin-right: 5px;
   } */
 } 
-
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .navbar{
@@ -254,7 +203,6 @@ padding: 5px;
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .navbar{

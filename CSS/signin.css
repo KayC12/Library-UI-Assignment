@@ -3,27 +3,18 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
 }
-
 * {
   padding: 0;
   margin: 0;
 }
-
 /* Styling the 2 big containers */
-
 .body-container {
   width: 100%;
-  background-color: green;
-  /* Remove background colour later */
 }
-
 .sub-body-container {
-  background-color: red;
-  /* Remove background colour later */
+  background-color: white;
 }
-
 /* Styling for the header */
-
 .navbar {
   width: 100%;
   font-family: 'Inter', sans-serif;
@@ -31,48 +22,38 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* height: fit-content; */
   margin-top: 30px;
   padding: 5px 20px;
 }
-
 .navbar-left img {
   width: 38px;
 }
-
 .navbar li {
   font-weight: 500;
   font-size: 14px;
   text-decoration: none;
   padding: 4px;
 }
-
 .navbar li a {
   text-decoration: none;
   color: black;
 }
-
 .navbar-right {
   display: flex;
   list-style-type: none;
   font-weight: 500;
 }
-
 i {
   width: 50px;
 }
-
 /* Styling of the Hamburger icon with responsiveness */
-
 .hamburger-sidebar {
   display: none;
 }
-
 .hamburg-container {
   display: inline-block;
   cursor: pointer;
 }
-
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
@@ -80,23 +61,18 @@ i {
   margin: 6px 0px;
   transition: 0.4s;
 }
-
 .change .bar1 {
   transform: translate(0, 11px) rotate(-45deg);
 }
-
 .change .bar2 {
   opacity: 0;
 }
-
 .change .bar3 {
   transform: translate(0, -11px) rotate(45deg);
 }
-
 /* Completed styling for Hamburger icon with responsiveness added into it */
 /*The end of the styling for the header with Navbar. */
 /* Stlying for search bar */
-
 .searchbar {
   font-family: 'Inter', sans-serif;
   display: flex;
@@ -105,12 +81,10 @@ i {
   font-size: 12px;
   padding: 10px 5px;
 }
-
 .searchbar h4 {
   color: black;
   font-weight: 400;
 }
-
 input[type=text], select {
   width: 100%;
   box-sizing: border-box;
@@ -121,48 +95,33 @@ input[type=text], select {
   border-radius: 3px;
   margin: 2px;
 }
-
 /* The end of styling for the Searchbar. */
 /* Rules to make images easier to work with */
-
 img {
   max-width: 100%;
   display: block;
 }
-
 /* Styling for the Primary Container */
-
 .primary-container {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   padding: 5px;
-  /* position: relative; */
-  background-color: aqua;
-  /* Change colour to white later on */
 }
-
 /* This marks the styling for the Sidebar. */
-
 .sidebar_menu {
   font-family: 'Mate', serif;
   font-weight: 400;
   list-style: none;
   width: 20%;
-  background-color: darkorchid;
 }
-
 .sidebar_menu li {
   padding: 6px 8px;
 }
-
 .sidebar_menu li a {
   text-decoration: none;
   color: black;
 }
-
 /* End of Sidebar menu end styling. */
-
 .wider-intro {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
@@ -171,108 +130,69 @@ img {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-
 /* Styling of Content Holder Container */
-
 .content-holder-container {
   display: flex;
   flex-direction: column;
   padding: 30px;
   margin-top: 40px;
-  /* Maybe add a Margin top of 10px */
-  background-color: burlywood;
 }
-  
 .contact-form-intro {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 28px;
   line-height: 30px;
 }
-
 .wider-intro {
   color: #742C2C;
   display: flex;
   justify-content: center;
 }
-
 .reading1 {
   color: #ED907F;
   margin-bottom: 15px;
 }
-
 .account1 {
   color: #984F1F;
 }
-
 .camera-img {
   width: 170px;
   height: 150px;
   background-image: url("/Assets/Ellipse7.png");
 }
-
 /* .circle {
   background-image: url("/Assets/Ellipse7.png");
   justify-content: center;
 } */
-
 /* Sign-In Form Styling area  */
-
 .contact-form {
   margin-top: 20px;
 }
-
 .registration input {
   width: 40%;
   background-color: green;
   color: white;
   border-radius: 10px;
 }
-
 .form-categories {
   padding-bottom: 15px;
   width: 100%;
 }
-
 .form-categories input [type=text] {
   width: 100%;
   box-sizing: border-box;
   background-color: lightgray;
 }
-
-
 /* .contact-form {
     display: flex;
     justify-content: center;
     min-height: 100vh;
-}
+}*/
 
-form {
+/*form {
   padding-top: 60px;
   padding-left: 350px;
-}
-
-
-/*styling for the circle. */
-
-/* .main-content {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  /*left: 160px; */
-  /* align-items: flex-start; */
-  /*justify-content: center;*/
-  /* margin-top: -450px; */
-  /* padding-left: 200px; */
-/* } */
-
-/* .circle {
-  background-color: lightgray;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  align-self: center;
-}  */
+}*/
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
@@ -280,13 +200,11 @@ form {
     display: flex;
     flex-direction: column;
   } */
-
   /* .hamburger-sidebar {
     display: block;
     margin-right: 5px;
   } */
 } 
-
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .navbar{

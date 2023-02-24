@@ -3,27 +3,18 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
 }
-
 * {
   padding: 0;
   margin: 0;
 }
-
 /* Styling the 2 big containers */
-
 .body-container {
   width: 100%;
-  background-color: green;
-  /* Remove background colour later */
 }
-
 .sub-body-container {
-  background-color: red;
-  /* Remove background colour later */
+  background-color: white;
 }
-
 /* Styling for the header */
-
 .navbar {
   width: 100%;
   font-family: 'Inter', sans-serif;
@@ -31,48 +22,38 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* height: fit-content; */
   margin-top: 30px;
   padding: 5px 20px;
 }
-
 .navbar-left img {
   width: 38px;
 }
-
 .navbar li {
   font-weight: 500;
   font-size: 14px;
   text-decoration: none;
   padding: 4px;
 }
-
 .navbar li a {
   text-decoration: none;
   color: black;
 }
-
 .navbar-right {
   display: flex;
   list-style-type: none;
   font-weight: 500;
 }
-
 i {
   width: 50px;
 }
-
 /* Styling of the Hamburger icon with responsiveness */
-
 .hamburger-sidebar {
   display: none;
 }
-
 .hamburg-container {
   display: inline-block;
   cursor: pointer;
 }
-
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
@@ -80,79 +61,58 @@ i {
   margin: 6px 0px;
   transition: 0.4s;
 }
-
 .change .bar1 {
   transform: translate(0, 11px) rotate(-45deg);
 }
-
 .change .bar2 {
   opacity: 0;
 }
-
 .change .bar3 {
   transform: translate(0, -11px) rotate(45deg);
 }
-
 /* Completed styling for Hamburger icon with responsiveness added into it */
 /*The end of the styling for the header with Navbar. */
 /* Rules to make images easier to work with */
-
 img {
   max-width: 100%;
   display: block;
 } 
-
 /* Styling for Mega Giant container */
-
 .mega-giant-container {
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  background-color: aqua;
-  /* Change colour to white later on */
 }
-
 /* This marks the styling for the Sidebar. */
-
 .sidebar_menu {
   font-family: 'Mate', serif;
   font-weight: 400;
   list-style: none;
   width: 20%;
-  background-color: darkorchid;
 }
-
 .sidebar_menu li {
   padding: 6px 8px;
 }
-
 .sidebar_menu li a {
   text-decoration: none;
   color: black;
 }
-
 /* End of Sidebar menu end styling. */
 /* Styling for Giant Container */
-
 .giant-container, .about-us {
   padding: 5px;
   width: 100%;
   margin-top: 0px;
-  background-color: burlywood;
 }
-
 /* styling for the grid components for the About Us page. */
-
 .our-mission, .our-why {
   padding-left: 0px;
   margin-bottom: 10px;
   margin-top: 10px;
 }
-
 .our-why {
   margin-top: .80rem;
 }
-
 .about_title {
   font-family: 'Imbue', serif;
   display: flex;
@@ -162,42 +122,35 @@ img {
   line-height: 1;
   color: black;
 }
-
 .about_content {
   align-self: flex-start;
   margin-top: .8rem;
 }
-
 .librarian {
   margin-top: 5px;
 } 
-
 .librarian-img {
   width: 100%;
   aspect-ratio: 3 / 2;
   object-fit: cover;
 }
-
 .about_description {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   line-height: 20px;
   padding-top: 10px;
 }
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
   /* .sidebar {
     display: flex;
     flex-direction: column;
   } */
-
   /* .hamburger-sidebar {
     display: block;
     margin-right: 5px;
   } */
 } 
-
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .navbar{
@@ -229,13 +182,12 @@ img {
     gap: 5px;
   }
   .about-peadmount, .our-mission, .our-why, .librarian {
-    border: 5px solid red;
+    border: 5px;
   }
   .our-mission {
     margin-top: 0px;
   } 
 }
-
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .navbar{
@@ -269,7 +221,7 @@ img {
     gap: 5px;
   }
   .about-peadmount, .our-mission, .our-why, .librarian {
-    border: 5px solid red;
+    border: 5px;
   }
   .our-mission {
     margin-top: 0px;
